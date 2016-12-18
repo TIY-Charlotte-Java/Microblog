@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hello, {{name}}!
+<ol>
+    {{#messages}}
+    <li>{{.}}</li>
+    {{/messages}}
+</ol>
+<form action="/create-comment" method="post">
+    <input type="text" placeholder="Enter your comment" name="messages"/>
+    <button type="submit">Comment</button>
+</form>
+</body>
+</html>
