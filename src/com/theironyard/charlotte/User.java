@@ -7,13 +7,31 @@ import java.util.ArrayList;
  */
 public class User {
 
-    String name;
-    ArrayList<String> messages;
-
     public User(String name, ArrayList<String> messages) {
         this.name = name;
         this.messages = new ArrayList<>();
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<String> getMessages() {
+        return messages;
+    }
+
+    public void setMessages(ArrayList<String> messages) {
+        this.messages = messages;
+    }
+
+    String name;
+    ArrayList<String> messages;
+
+
 
 
 }
