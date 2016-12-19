@@ -1,0 +1,21 @@
+<html>
+<body>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Write a message" name="message"/>
+    <button type="submit">Submit</button>
+</form>
+Messages by {{name}}:
+    <ol>
+        {{#message}}
+        <li>{{.}}</li>
+        {{/message}}
+    </ol>
+<style>
+    body {background-color: #E4E8E7;}
+    body {color: #61DFBE;}
+    body {font-family: "Lucida Console", Monaco, monospace;}
+</style>
+</body>
+</html>
+
+
