@@ -34,7 +34,9 @@ public class Main {
         Spark.post("/create-message",
                 (request, response) -> {
                     String message = request.queryParams("message");
-                    user.storeMessage.add(message);
+                    if (message.length() < 140) {
+                        user.storeMessage.add(message);
+                    }
                     response.redirect("/");
                     return "";
                 }
