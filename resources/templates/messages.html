@@ -5,8 +5,11 @@
     <button type="submit">Enter</button>
 
 </form>
-Hello, {{name}}!
-<br />{{userMessage}}
-<br />
+Hello, {{name}}!</br>
+<ol>
+    {{#userMessage}}
+    <li>{{.}}</li>
+    {{/userMessage}}
+</ol>
 </body>
 </html>
