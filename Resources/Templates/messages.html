@@ -1,0 +1,21 @@
+<html>
+<body>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Write a message" name="message"/>
+    <button type="submit">Submit</button>
+</form>
+Messages by {{name}}:<br/>
+<ol>
+    {{#messages}}
+    <li>{{.}}</li>
+    {{/messages}}
+</ol>
+<style>
+    body {background-color: #4286f4;}
+    body {color: #04000c;}
+    body {font-family: "Times New Roman", Georgia, Serif;}
+</style>
+</body>
+</html>
+</body>
+</html>
