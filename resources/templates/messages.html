@@ -1,0 +1,17 @@
+<html>
+<body>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Enter new message" text="message"/>
+    <button type="submit">create!</button>
+    <ol>
+        {{#messages}}
+        <li>{{.}}</li>
+        {{/messages}}
+    </ol>
+Messages by {{name}}:
+    {{text}}
+Hello, World!
+I like turtles.
+This is already better than twitter.
+</body>
+</html>
